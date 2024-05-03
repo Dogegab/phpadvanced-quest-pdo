@@ -1,6 +1,6 @@
 <?php
 require_once '_connec.php';
-
+$pdo = new \PDO(DSN, USER, PASS);
 
 $query = "SELECT * FROM friend";
 $statement = $pdo->prepare($query);
